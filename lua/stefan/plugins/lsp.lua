@@ -27,7 +27,7 @@ return {
 			ensure_installed = {
 				"lua_ls",
 				"gopls",
-				"tsserver",
+				"tsp_server",
                 "jsonls"
 			},
 			handlers = {
@@ -63,8 +63,8 @@ return {
 				end,
 			},
 			mapping = cmp.mapping.preset.insert({
-				["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
-				["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
+				["<C-<>"] = cmp.mapping.select_prev_item(cmp_select),
+				["<C->>"] = cmp.mapping.select_next_item(cmp_select),
 				["<C-y>"] = cmp.mapping.confirm({ select = true }),
 				["<C-Space>"] = cmp.mapping.complete(),
 			}),

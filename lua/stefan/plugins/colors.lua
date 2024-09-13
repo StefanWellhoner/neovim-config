@@ -3,7 +3,6 @@ function ColorMyPencils(color)
 	vim.cmd.colorscheme(color)
 end
 
-
 return {
 	{
 		"rose-pine/neovim",
